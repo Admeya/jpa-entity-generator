@@ -69,6 +69,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-gpg-plugin</artifactId>
+                <version>3.2.2</version>
                 <executions>
                     <execution>
                         <id>sign-artifacts</id>
@@ -108,8 +109,8 @@
                     <includes>
                         <include>com/smartnews/jpa_entity_generator/maven/EntityGenMojo.java</include>
                     </includes>
-                    <source>1.8</source>
-                    <target>1.8</target>
+                    <source>11</source>
+                    <target>11</target>
                     <encoding>UTF-8</encoding>
                 </configuration>
             </plugin>
@@ -122,6 +123,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-source-plugin</artifactId>
+                <version>3.2.0</version>
                 <executions>
                     <execution>
                         <id>attach-sources</id>

@@ -4,7 +4,7 @@
 jdbcSettings:
   url: "jdbc:h2:file:./sample/db/blog;MODE=MySQL;TRACE_LEVEL_FILE=2;TRACE_LEVEL_SYSTEM_OUT=2"
   username: "user"
-  password: ${DB_PASSWORD}
+  password: "pass"
   driverClassName: "org.h2.Driver"
 
 # ---------------------------------------------------------
@@ -12,7 +12,7 @@ jdbcSettings:
 
 # If you need to specify non-standard source directory, set the following setting as needed
 #   - string value: the relative path from the project root directory.
-outputDirectory: "src/main/java"
+outputDirectory: "src/main/java/goal"
 
 # The package name used when generating entity classes
 #   - string value: full package name
@@ -28,6 +28,8 @@ packageNameForJpa1: "com.example.entity.jpa1"
 # If you'd like to have JSR-305 annotations in entity classes as well, set the following attribute
 #   - boolean value: true if you need to generate Nonnull/Nullable annotation-wired entities as well
 jsr305AnnotationsRequired: false
+
+useJakarta: true
 
 # If you want use primitive type instead of the boxing type(e.g: int <-> Integer), set the following attribute
 # This will only take effect on non null fields

@@ -23,7 +23,7 @@ public class CodeGeneratorTest {
     public void _01_generateAll_TableScanMode_Is_Default() throws Exception {
         CodeGeneratorConfig config = CodeGeneratorConfig.load("entityGenConfig.yml");
         config.setJpa1SupportRequired(true);
-        config.setOutputDirectory("src/test/java");
+        config.setOutputDirectory("src/test/java/goal");
         CodeGenerator.generateAll(config, true);
         CodeGenerator.generateAll(config, false);
     }
